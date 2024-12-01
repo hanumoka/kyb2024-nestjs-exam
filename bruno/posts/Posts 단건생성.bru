@@ -1,0 +1,19 @@
+meta {
+  name: Posts 단건생성
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/posts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "author": "kyb",
+    "title": "헉헉",
+    "content": "핵핵"
+  }
+}

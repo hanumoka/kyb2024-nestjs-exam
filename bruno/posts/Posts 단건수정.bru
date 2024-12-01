@@ -1,0 +1,19 @@
+meta {
+  name: Posts 단건수정
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/posts/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "author": "kyb22",
+    "title": "헉헉22",
+    "content": "핵핵22"
+  }
+}
